@@ -29,10 +29,17 @@ install(TARGETS ${LIBRARY_NAME}
   COMPONENT dev)
 
 # Create 'version.h'
-configure_file(version.hpp.in
+configure_file(libutil/version.hpp.in
   "${CMAKE_CURRENT_BINARY_DIR}/version.hpp" @ONLY)
 set(HEADERS ${HEADERS} ${CMAKE_CURRENT_BINARY_DIR}/version.hpp)
 
 # Install headers
-install(FILES ${HEADERS}
-  DESTINATION "${INSTALL_INCLUDE_DIR}/${LIBRARY_FOLDER}" )
+install(
+  DIRECTORY
+  "${CMAKE_SOURCE_DIR}/libutil"
+  DESTINATION
+  "${INSTALL_INCLUDE_DIR}"
+  FILES_MATCHING
+  PATTERN
+  "*.hpp"
+)

@@ -1,5 +1,5 @@
-#include "random_string.hpp"
-#include "random_generator.hpp"
+#include "string.hpp"
+#include "generator.hpp"
 
 #include <utility>
 

@@ -1,7 +1,7 @@
 #ifndef LIBUTIL_RANDOM_ENTRY_HPP
 #define LIBUTIL_RANDOM_ENTRY_HPP
 
-#include "random/generate.hpp"
+#include <libutil/random/entry.hpp>
 #include <vector>
 
 namespace libutil {
