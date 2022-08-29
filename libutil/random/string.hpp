@@ -17,10 +17,7 @@ public:
                                       "abcdefghijklmnopqrstuvwxyz";
 
   //! A set of alphanumeric chars that can be used as the random source pool
-  static constexpr char ALPHA_NUM[] = "0123456789"
-                                      "~!@#$%^&*()_+"
-                                      "`-=<>,./?\"';:"
-                                      "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  static constexpr char ALPHA_NUM[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
                                       "abcdefghijklmnopqrstuvwxyz";
 
   //! \brief Create the object with the default source pool (ALL_CHARS)
